@@ -1,0 +1,135 @@
+
+
+.header-map {
+  background: url('../img/maps.png') no-repeat;
+  height:350px;
+  width:100%;
+  background-position: 50% 50%;
+  background-size:cover;
+}
+
+.social-icons-block-items_2 {
+  background: #c9c9c9;
+  opacity:0.9;
+  padding:0 10px;
+}
+
+.section {
+
+.user-nav-blocks_3 {
+  margin-top:-40px;
+}
+
+}
+
+.catalog-block_3 {
+
+  .top-links-block {
+    padding:0 30px;
+  }
+
+}
+
+.main-catalog-block_2 {
+  .brands-block {
+    margin:0 20px;
+  }
+  padding:20px 0;
+  .company-info-block_2 {
+    padding:0 20px;
+  }
+   & .company-loc {
+      & h3 {
+        font-family: 'roboto';
+        font-weight:900;
+        font-size:18px;
+      }
+      & p {
+        display: flex;
+        font-family: 'roboto';
+        font-size:12px;
+        color:#777;
+        line-height: 13px;
+      }
+      .loc-icon {
+        background: url('../img/loc-icon.png') no-repeat;
+        width:30px;
+        height:30px;
+        display: block;
+      }
+    }
+    & .company-com {
+      padding:0 0 30px 0;
+      .tel-icon {
+        background: url('../img/tel-icon.png') no-repeat;
+        width:20px;
+        height:15px;
+        display: block;
+      }
+      .mail-icon {
+        background: url('../img/mail-icon.png') no-repeat;
+        width:20px;
+        height:15px;
+        display: block;
+      }
+      & a {
+        font-family: 'roboto';
+        font-size:20px;
+        color:#333;
+        padding-left:10px;
+        font-weight:500;
+      }
+    }
+    & .company-text {
+      font-size:14px;
+      font-family: 'roboto';
+      line-height: 15px;
+    }
+
+   & .user-form-block {
+    padding: 0 20px;
+     & .user-form {
+      margin-bottom:30px;
+      & label {
+        font-size:12px;
+        font-family: 'roboto';
+      }
+      &-control {
+        border:1px solid #efefef;
+        font-size:12px;
+        background: #fff;
+        border-radius: 0px;
+        padding:3px 15px 3px 15px;
+      }
+      }
+    }
+}
+
+.social-links-block {
+  padding:65px 15px 0 15px;
+}
+
+@media only screen and (min-width: 320px) and (max-width:500px) {
+  .brand-logo {
+    width:100%;
+  }
+
+  }
+
+  @media only screen and (min-width: 320px) and (max-width:992px) {
+    .social-links-block_2 {
+      padding:65px 0;
+    }
+  }
+
+  @media only screen and (min-width: 320px) and (max-width:1020px) {
+  .nav-side-menu_5 {
+    margin:0 !important;
+  }
+}
+
+  @media only screen and (min-width: 320px) and (max-width:420px) {
+  .top-catalog-block {
+    display: none;
+  }
+}

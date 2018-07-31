@@ -216,14 +216,10 @@ body {
 
 }
 
-
-
-
-
 .section {
 
   .user-nav-blocks {
-    margin-top:-500px;
+    margin-top:-520px;
   }
 
   .user-panel {
@@ -268,6 +264,7 @@ body {
   .item-price_1 {
     color:#fff3ee;
     font-size:18px;
+    font-weight:500;
   }
 
   .items-ind {
@@ -276,12 +273,31 @@ body {
   }
 
   .close-button-block {
-    font-size:40px;
+    font-size:11px;
     color:#fff51f;
     position: absolute;
-    right:0;
+    right:10%;
+    top:50%;
+    transform:translateY(-50%);
+    text-align: center;
+  }
+  .close-text {
+    color:#333;
+    display: block;
+  }
+  .close-icon {
+    font-size:20px;
   }
 
+  .close-icon_2 {
+    color:#333;
+    font-size:12px;
+    font-weight:900;
+  }
+
+  .close-button-block_2 {
+    right:15%;
+  }
   .search-block {
     position: relative;
   }
@@ -301,7 +317,7 @@ body {
     top:0;
     bottom:0;
     right:0;
-    padding:0px 12px;
+    padding:0px 10px;
     background-color: #333;
     border:none;
     cursor: pointer;
@@ -314,8 +330,8 @@ body {
 
   .block-description-info {
     background: #fff51f;
-    padding:80px 25px;
-    margin:10px 0 0 0;
+    padding:68px 25px;
+    margin:10px 0 45px 0;
 
     & p {
       font-size:18px;
@@ -369,6 +385,7 @@ body {
   .side-banner-block {
     width:100%;
     position: relative;
+    margin-top:30px;
     & a {
       display: block;
     }
@@ -392,7 +409,7 @@ body {
   }
 
   .tags-block {
-    margin:60px 0px 30px 0px;
+    margin:30px 0px 30px 0px;
     background: #fff;
     padding:30px 30px;
     & h2 {
@@ -927,11 +944,14 @@ body {
      .controls-arrows-block {
       width:20% !important;
      }
+     .logo {
+      padding:0 0 0 30px !important;
+     }
    }
 
           @media only screen and (min-width: 320px) and (max-width:500px) {
       .logo {
-        padding:0 !important;
+        padding:0 0 0 10px !important;
       }
       .content-block_1 {
       right:0 !important;
