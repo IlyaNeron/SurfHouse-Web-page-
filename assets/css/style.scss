@@ -398,13 +398,13 @@ body {
     & h2 {
       font-family: 'Raleway';
       color:#333;
-      font-weight:800;
+      font-weight:900;
       position: absolute;
       font-style:italic;
       right:0;
-      top:50%;
+      top:60%;
       padding-left:160px;
-
+      transform:translateY(-50%);
     }
   }
 

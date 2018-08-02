@@ -167,7 +167,7 @@
                         </a>
                      </div>
                   </div>
-                  <div class="catalog-block catalog-block_4 col-12 col-sm-12 col-md-12 col-lg-9">
+                  <div class="catalog-block catalog-block_4 col-12 col-sm-12 col-md-12 col-lg-9 p-0">
                      <div class="top-catalog-block">
                         <div class="top-links-block top-links-block_2 justify-content-between d-flex flex-wrap">
                            <div class="">
@@ -182,7 +182,7 @@
                         </div>
                      </div>
                      <div class="main-catalog-block main-catalog-block_2 main-cart-block">
-                        <div class="contact-form-block product-block main-cart-block-shopping row m-0">
+                        <div class="contact-form-block product-block main-cart-block-shopping  m-0">
                            <div class="top-cart-blocks d-flex">
                               <div class="top-cart-block top-cart-block-first d-flex align-items-center">
                                  <span class="before-element">1</span>
@@ -197,20 +197,24 @@
                                  <span>ORDER CONFIRMATION</span>
                               </div>
                            </div>
-                           <div class="cart-products row col-12 col-sm-12 col-md-12 col-lg-12 d-flex">
+                           <div class="cart-products row col-12 col-sm-12 col-md-12 col-lg-12 d-flex m-0">
                               <div class="cart-products-left col-12 col-sm-12 col-md-12 col-lg-8">
                                  <table class="table">
                                     <tr class="cart-products-left-caption">
-                                       <td scope="col">PRODUCT NAME</td>
-                                       <td>UNIT PRICE</td>
-                                       <td>QTY</td>
-                                       <td>SUBTOTAL</td>
+                                       <td></td>
+                                       <td class="main-table-caption col-6">PRODUCT NAME</td>
+                                       <td class="col-2">UNIT PRICE</td>
+                                       <td class="col-3">QTY</td>
+                                       <td class="col-2">SUBTOTAL</td>
+                                       <td></td>
                                     </tr>
                                     <tr class="cart-products-left-content">
-                                       <td class="d-flex">
+                                       <td class="d-flex image-col">
                                           <div class="cart-products-left-content-image">
                                              <img alt="" class="img-thumbnail" src="assets/img/slider-catalog-image_9.jpg">
                                           </div>
+                                       </td>
+                                       <td>
                                           <div class="cart-products-left-content-description">
                                              <h3>PEEKY CROPPED</h3>
                                              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
@@ -235,17 +239,67 @@
                                              </ul>
                                           </div>
                                        </td>
-                                       <td class="cart-products-left-content-price">&#8364;749.50</td>
+                                       <td class="cart-products-left-content-price">&#8364; 749.50</td>
                                        <td class="cart-products-left-content-quinity">
                                           <span><</span>
                                           <span>1</span>
                                           <span>></span>
                                        </td>
-                                       <td class="cart-products-left-content-price">&#8364;749.50</td>
+                                       <td class="cart-products-left-content-price">&#8364;749.50<span class="close"></span></td>
+                                       <td>&#10006;</td>
+                                    </tr>
+                                    <tr class="cart-products-left-content">
+                                       <td class="d-flex image-col">
+                                          <div class="cart-products-left-content-image">
+                                             <img alt="" class="img-thumbnail" src="assets/img/slider-catalog-image_9.jpg">
+                                          </div>
+                                       </td>
+                                       <td>
+                                          <div class="cart-products-left-content-description">
+                                             <h3>PEEKY CROPPED</h3>
+                                             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                              Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                                             </p>
+                                             <ul class="cart-products-left-content-icons p-0 m-0 d-flex">
+                                                <li>
+                                                   <a href="#">
+                                                      <img alt="" src="assets/img/cart-products-icon_1.png">
+                                                   </a>
+                                                </li>
+                                                <li>
+                                                   <a href="#">
+                                                      <img alt="" src="assets/img/cart-products-icon_2.png">
+                                                   </a>
+                                                </li>
+                                                <li>
+                                                   <a href="#">
+                                                      <img alt="" src="assets/img/cart-products-icon_3.png">
+                                                   </a>
+                                                </li>
+                                             </ul>
+                                          </div>
+                                       </td>
+                                       <td class="cart-products-left-content-price">&#8364; 749.50</td>
+                                       <td class="cart-products-left-content-quinity">
+                                          <span><</span>
+                                          <span>1</span>
+                                          <span>></span>
+                                       </td>
+                                       <td class="cart-products-left-content-price">&#8364;749.50<span class="close"></span></td>
+                                       <td>&#10006;</td>
                                     </tr>
                                  </table>
+                                 <div class="cart-products-left-footer">
+                                    <h3>HAVE YOU GOT A COUPON CODE?</h3>
+                                    <div class="cart-products-left-footer-form d-flex justify-content-between">
+                                       <input type="text" placeholder="INSERT CODE" class="form-control cart-products-left-footer-form-input">
+                                       <button type="button" class="btn cart-products-left-footer-form-button">UPDATE SHOPPING CART</button>
+                                    </div>
+                                    <a class="cart-products-left-footer-link float-right" href="#">or continue shopping</a>
+                                 </div>
                               </div>
-                              <div class="total-cart-price-block col-12 col-sm-12 col-md-12 col-lg-4">
+                              <div class="total-cart-price-block-wrapper col-12 col-sm-12 col-md-12 col-lg-4">
+                              <div class="total-cart-price-block">
                                 <h3 class="text-center">REVIEW YOUR CART</h3>
                                  <div class="total-cart-price-block-item_1 d-flex justify-content-between">
                                     <span>YOUR CART</span>
@@ -266,8 +320,10 @@
                                  <div class="total-cart-price-block-button text-center">
                                     <a href="#" class="btn">CHECKOUT</a>
                                  </div>
+                              </div>
                         </div>
                      </div>
+                  </div>
                      <div class="sliders-section sliders-section_3 sliders-section_4 col-12 col-sm-12 col-md-12 col-lg-12">
                         <div id="carouselExampleIndicators_5" class="carousel slide slider_4">
                         <div class="top-slider justify-content-between">

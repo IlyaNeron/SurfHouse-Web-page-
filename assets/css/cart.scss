@@ -15,16 +15,30 @@
   }
   .sliders-section_4 {
     margin:0;
+    .slider_4 {
+      padding-top:10px;
+    }
+    .top-slider {
+      padding:30px 0;
+    }
   }
   .side-banner-block_3 {
   margin-top: 90px;
+}
+.top-catalog-block {
+  padding:15px 30px;
+}
+.catalog-block-wrapper {
+  z-index:10;
 }
 
 }
 
 .main-cart-block {
-  padding:10px 0 0;
+  padding:0px 0 0;
   .top-cart-blocks {
+    padding:0 15px;
+    flex-wrap:wrap;
     & span {
       font-size:24px;
       color:#aaa;
@@ -46,7 +60,7 @@
       }
     }
     & .top-cart-block {
-      padding:0 20px;
+      padding:15px 15px;
     }
   }
   .total-cart-price-block {
@@ -101,6 +115,7 @@
 }
 .cart-products {
   padding:30px 0 30px 0;
+  align-items:flex-start;
 }
 
 }
@@ -116,9 +131,13 @@
         color:#333;
         font-weight:700;
         font-family: 'roboto';
+        white-space: nowrap;
       }
     }
     &-content {
+      & td {
+        text-align: center;
+      }
       &-image {
         & img {
         height:110px;
@@ -126,15 +145,18 @@
       }
       }
       &-description {
+        text-align: left;
         & h3 {
           font-size:14px;
           font-weight: bold;
           font-family: 'roboto';
+          margin: 0;
         }
         & p {
           font-size:12px;
           font-family: 'roboto';
           color: #707070;
+          margin-bottom:10px;
         }
       }
       &-icons {
@@ -150,4 +172,58 @@
         font-family: 'roboto';
       }
     }
+    .main-table-caption {
+      font-style: italic;
+    }
+    .image-col {
+      padding:15px 0;
+    }
+    &-footer {
+     & h3 {
+      font-size: 16px;
+      font-style:italic;
+      }
+      &-form {
+        &-input {
+          max-width: 240px;
+          font-size:11px;
+          color:#a8a8a8;
+          border-radius: 0;
+          border:1px solid #e6e6e6;
+          font-family: 'roboto';
+        }
+        &-button {
+          max-width: 200px;
+          border-radius: 0;
+          background: #333;
+          font-size: 14px;
+          color:#fff;
+          padding:7px 15px;
+          &:hover {
+            background: #faef03;
+            color:#333;
+          }
+        }
+      }
+      &-link {
+        font-family: 'roboto';
+        font-style: italic;
+        font-size: 14px;
+        color:#333;
+        padding:5px 0 5px;
+        &:hover {
+          color:#333;
+        }
+      }
+    }
+}
+
+@media only screen and (min-width: 320px) and (max-width:1190px) {
+  .main-cart-block {
+
+  .top-cart-blocks span {
+    font-size:18px;
+  }
+}
+
 }
