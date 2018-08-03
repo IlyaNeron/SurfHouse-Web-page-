@@ -9243,9 +9243,9 @@ body {
   right: 0;
   z-index: 10; }
   .header-blocks {
-    padding: 20px 0; }
+    padding: 20px 70px; }
   .header .logo {
-    padding: 0 0 0 70px; }
+    padding: 0 0 0 0px; }
   .header .social-icons-block {
     padding: 30px 0 0 0; }
   .header .social-icons-block-items li {
@@ -9326,7 +9326,6 @@ body {
     display: block;
     -webkit-transition: all 0.5s;
     transition: all 0.5s;
-    font-family: 'roboto';
     font-weight: 900; }
     .section_1 .slider-item-button a:hover {
       -webkit-transition: all 0.5s;
@@ -9339,7 +9338,8 @@ body {
   padding: 1px 0;
   width: 40px;
   background: #fff51f;
-  border-radius: 0; }
+  border-radius: 0;
+  bottom: 45px; }
 
 .section_1 .radio-buttons .active {
   background: #fb4d01; }
@@ -9536,7 +9536,8 @@ body {
     font-weight: 900;
     font-style: italic;
     font-size: 24px;
-    font-family: 'roboto'; }
+    font-family: 'roboto';
+    margin-bottom: 20px; }
   .section .tags-block-buttons {
     background: #e9e9e9;
     border-radius: 0;
@@ -9560,7 +9561,7 @@ body {
     font-family: 'roboto';
     margin: 20px 0; }
   .section .tags-block .tags-items {
-    margin: 0 10px; }
+    margin: 0 10px 10px 10px; }
 
 .section .items-block {
   background: #fff;
@@ -9569,7 +9570,8 @@ body {
     font-weight: 900;
     font-style: italic;
     font-size: 24px;
-    padding: 0 30px; }
+    padding: 0 30px;
+    margin-bottom: 30px; }
   .section .items-block ul {
     padding: 0; }
   .section .items-block li {
@@ -9595,8 +9597,10 @@ body {
 .sliders-section {
   background: #f8f8f8;
   margin-top: -20px; }
+  .sliders-section .catalog-item-wrapper {
+    padding: 15px; }
   .sliders-section .top-slider {
-    padding: 30px 30px;
+    padding: 26px 30px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex; }
@@ -9605,7 +9609,8 @@ body {
       color: #707070;
       font-weight: 800;
       font-style: italic;
-      font-family: "roboto"; }
+      font-family: "roboto";
+      margin: 0; }
   .sliders-section .controls-arrows-block {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -9629,9 +9634,9 @@ body {
     width: 10px;
     height: 13px; }
   .sliders-section .catalog-item {
-    background: #fff; }
+    background: #fff;
+    height: 100%; }
     .sliders-section .catalog-item-image {
-      margin: 10px;
       position: relative; }
       .sliders-section .catalog-item-image a {
         display: block; }
@@ -9852,6 +9857,20 @@ body {
 .nav-links {
   padding: 0 20px 0 0; }
 
+@media only screen and (min-width: 320px) and (max-width: 555px) {
+  .social-image-block-wrapper {
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important; } }
+
+@media only screen and (min-width: 320px) and (max-width: 380px) {
+  .header .social-icons-block {
+    margin: 0; }
+    .header .social-icons-block-items li a {
+      padding: 5px; }
+  .social-image-block {
+    width: 100%; } }
+
 @media only screen and (min-width: 320px) and (max-width: 705px) {
   .footer-bottom {
     position: inherit; }
@@ -9879,7 +9898,9 @@ body {
         -ms-flex-pack: center;
             justify-content: center; }
   .nav-links {
-    padding: 0; } }
+    padding: 0; }
+  .header-blocks {
+    padding: 20px 20px; } }
 
 @media only screen and (min-width: 320px) and (max-width: 430px) {
   .nav-list_2 {
@@ -9910,17 +9931,17 @@ body {
     display: none; }
   .catalog-item-image img {
     max-height: 100% !important; }
-  .catalog-item-ind {
-    right: 15px !important; } }
+  .radio-buttons {
+    bottom: -20px; } }
 
 @media only screen and (min-width: 320px) and (max-width: 992px) {
   .controls-arrows-block {
     -webkit-box-pack: justify !important;
         -ms-flex-pack: justify !important;
             justify-content: space-between !important; }
-  .catalog-item:last-child {
+  .catalog-item-wrapper:last-child {
     display: none !important; }
-  .slider_2 .catalog-item:nth-child(5n) {
+  .slider_2 .catalog-item-wrapper:nth-child(5n) {
     display: none !important; }
   .controls-arrows-block {
     width: 20% !important; }
@@ -10007,12 +10028,15 @@ select, option {
   color: #333;
   font-weight: 400;
   font-family: 'roboto';
-  padding: 5px 20px 5px 0; }
+  padding: 0px 20px 0px 0; }
 
 .catalog-block .filters-block_1 select {
   font-size: 12px;
-  padding: 5px 40px 5px 5px;
-  font-family: 'roboto'; }
+  padding: 0px 40px 0px 5px;
+  font-family: 'roboto';
+  height: 20px;
+  border-color: #d8d6d6;
+  background: url("..img/iconmenu.png"); }
 
 .catalog-block .filters-block_1 .arrow-up {
   padding: 0 10px;
@@ -10042,9 +10066,11 @@ select, option {
 .catalog-block .filters-block_3 form {
   padding: 5px 15px; }
   .catalog-block .filters-block_3 form select {
-    padding: 5px 30px 5px 5px;
+    padding: 0px 30px 0px 5px;
     font-size: 12px;
-    font-family: 'roboto'; }
+    font-family: 'roboto';
+    height: 20px;
+    border-color: #d8d6d6; }
 
 .catalog-block .filters-block_4 span {
   font-size: 12px;
@@ -10062,7 +10088,7 @@ select, option {
       background: #26d2fc; }
 
 .catalog-block .catalog-slider-wrapper {
-  padding: 0 15px; }
+  padding: 0 25px; }
 
 @media only screen and (min-width: 320px) and (max-width: 1020px) {
   .header-banner {
@@ -10150,7 +10176,7 @@ select, option {
         padding: 3px 15px 3px 15px; }
 
 .social-links-block {
-  padding: 65px 15px 0 15px; }
+  padding: 65px 0px 0 0px; }
 
 @media only screen and (min-width: 320px) and (max-width: 500px) {
   .brand-logo {
@@ -10421,8 +10447,7 @@ select, option {
         color: #808080; }
 
 .sliders-section_3 {
-  position: relative;
-  padding: 0; }
+  position: relative; }
   .sliders-section_3 .top-slider h2 {
     font-weight: 900;
     font-size: 30px;
@@ -10453,6 +10478,9 @@ select, option {
     background: url("../img/controls-button-icon_002.png") no-repeat;
     width: 15px;
     height: 35px; }
+
+.slider_5 {
+  padding-top: 130px; }
 
 @media only screen and (min-width: 320px) and (max-width: 350px) {
   .user-product-carousel-block .radio-buttons-item:nth-child(2n) {
@@ -10558,49 +10586,74 @@ select, option {
         -ms-flex-align: start;
             align-items: flex-start; }
 
-.cart-products-left-caption td:first-child {
-  font-style: italic; }
+.cart-products-left-header {
+  border-bottom: 1px solid #eaeaea; }
+  .cart-products-left-header-main-caption {
+    width: 50%; }
+    .cart-products-left-header-main-caption h3 {
+      font-size: 12px;
+      font-family: 'roboto';
+      font-weight: 500;
+      font-style: italic; }
+  .cart-products-left-header-items-caption {
+    width: 50%; }
+    .cart-products-left-header-items-caption h3 {
+      font-size: 12px;
+      font-family: 'roboto'; }
 
-.cart-products-left-caption td {
-  font-size: 12px;
-  color: #333;
-  font-weight: 700;
-  font-family: 'roboto';
-  white-space: nowrap; }
-
-.cart-products-left-content td {
-  text-align: center; }
-
-.cart-products-left-content-image img {
-  height: 110px;
-  max-width: 70px; }
-
-.cart-products-left-content-description {
-  text-align: left; }
-  .cart-products-left-content-description h3 {
-    font-size: 14px;
-    font-weight: bold;
-    font-family: 'roboto';
-    margin: 0; }
-  .cart-products-left-content-description p {
-    font-size: 12px;
-    font-family: 'roboto';
-    color: #707070;
-    margin-bottom: 10px; }
-
-.cart-products-left-content-icons li a {
-  padding: 0 7px; }
-
-.cart-products-left-content-price {
-  font-size: 14px;
-  color: #707070;
-  font-family: 'roboto'; }
-
-.cart-products-left .main-table-caption {
-  font-style: italic; }
-
-.cart-products-left .image-col {
+.cart-products-left-content-item {
   padding: 15px 0; }
+  .cart-products-left-content-item-image {
+    width: 35%;
+    padding: 0 15px; }
+    .cart-products-left-content-item-image img {
+      width: 100%;
+      height: 110px; }
+  .cart-products-left-content-item-description {
+    width: 65%; }
+    .cart-products-left-content-item-description h3 {
+      font-size: 14px;
+      font-weight: bold;
+      font-family: 'roboto'; }
+    .cart-products-left-content-item-description p {
+      font-size: 12px;
+      font-family: 'roboto';
+      color: #828282;
+      margin: 0; }
+  .cart-products-left-content-item-1 {
+    width: 50%; }
+    .cart-products-left-content-item-1 ul {
+      margin-left: -10px;
+      margin-bottom: 0; }
+      .cart-products-left-content-item-1 ul li a {
+        padding: 5px 10px; }
+  .cart-products-left-content-item-2 {
+    width: 50%; }
+    .cart-products-left-content-item-2-price {
+      width: 33.3333%; }
+      .cart-products-left-content-item-2-price span {
+        font-size: 14px;
+        font-family: 'roboto';
+        color: #828282; }
+    .cart-products-left-content-item-2-qty {
+      width: 33.33333%;
+      -webkit-box-align: start;
+          -ms-flex-align: start;
+              align-items: flex-start; }
+      .cart-products-left-content-item-2-qty span {
+        font-size: 14px;
+        font-family: 'roboto';
+        color: #828282; }
+      .cart-products-left-content-item-2-qty a {
+        font-size: 14px;
+        font-family: 'roboto';
+        color: #828282; }
+    .cart-products-left-content-item-2-total {
+      width: 33.3333%; }
+      .cart-products-left-content-item-2-total span {
+        font-size: 14px;
+        font-family: 'roboto';
+        color: #828282; }
 
 .cart-products-left-footer h3 {
   font-size: 16px;
@@ -10637,6 +10690,19 @@ select, option {
 @media only screen and (min-width: 320px) and (max-width: 1190px) {
   .main-cart-block .top-cart-blocks span {
     font-size: 18px; } }
+
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+  .top-cart-blocks {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+  .catalog-item_3 {
+    display: none; } }
+
+@media only screen and (min-width: 320px) and (max-width: 575px) {
+  .catalog-item_2 {
+    display: none; } }
 
 .header-back_2 {
   background: url("../img/header-back-image_4.jpg") no-repeat;
@@ -10685,7 +10751,9 @@ select, option {
 
 .user-login-block-form-1 input {
   border: 1px solid #efefef;
-  padding: 0; }
+  padding: 2.5px 10px;
+  font-family: "roboto";
+  font-size: 12px; }
 
 .user-login-block-form-bottom span {
   font-size: 11px;
@@ -10724,7 +10792,8 @@ select, option {
 .user-quest-block p {
   font-size: 12px;
   font-family: 'roboto';
-  margin-bottom: 30px; }
+  margin-bottom: 20px;
+  line-height: 14px; }
 
 .user-quest-block-check-1 input, .user-quest-block-check-2 input {
   top: 50%;
@@ -10743,7 +10812,7 @@ select, option {
   display: block; }
 
 .user-quest-block-text-2 {
-  padding-top: 30px;
+  padding-top: 20px;
   color: #353535; }
 
 .user-quest-block-text-3 {
@@ -10760,7 +10829,7 @@ select, option {
     font-weight: bold; }
 
 .user-quest-block-button {
-  padding: 60px 0 0px; }
+  padding: 45px 0 0px; }
   .user-quest-block-button button {
     border-radius: 0;
     background: #333;
@@ -10772,115 +10841,131 @@ select, option {
       background: #faef03;
       color: #333; }
 
-.inf-form-block-button {
-  position: absolute;
-  bottom: 15px;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%); }
-  .inf-form-block-button button {
-    background: #333;
-    padding: 5px 46px;
-    color: #fff;
-    border-radius: 0; }
-    .inf-form-block-button button:hover {
-      color: #333;
-      background: #faef03; }
-
-.inf-form-block-text {
-  padding: 55px 0px 0 30px; }
-  .inf-form-block-text p {
-    font-size: 12px;
-    font-family: 'roboto'; }
-
-.inf-form-block h3 {
-  font-size: 16px;
-  font-family: 'roboto';
-  font-weight: bold;
-  margin-bottom: 50px; }
-
-.inf-form-block-left-form, .inf-form-block-right-form {
-  margin-bottom: 35px; }
-  .inf-form-block-left-form label, .inf-form-block-right-form label {
-    font-size: 12px;
+.inf-form-block {
+  padding: 0 10px; }
+  .inf-form-block-button {
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%); }
+    .inf-form-block-button button {
+      background: #333;
+      padding: 5px 46px;
+      color: #fff;
+      border-radius: 0; }
+      .inf-form-block-button button:hover {
+        color: #333;
+        background: #faef03; }
+  .inf-form-block-text {
+    padding: 55px 0px 0 30px; }
+    .inf-form-block-text p {
+      font-size: 12px;
+      font-family: 'roboto'; }
+  .inf-form-block h3 {
+    font-size: 16px;
     font-family: 'roboto';
-    margin: 0; }
-  .inf-form-block-left-form-icons, .inf-form-block-right-form-icons {
-    margin: -15px 0 15px 0; }
-
-.inf-form-block-left-double input, .inf-form-block-right-double input {
-  margin: 0px 0 10px; }
-
-.inf-form-block-left-control, .inf-form-block-right-control {
-  border: 1px solid #dfdfdf;
-  border-radius: 0;
-  font-size: 12px;
-  color: #aaaaaa;
-  padding: 5px 10px;
-  font-family: 'roboto'; }
-
-.inf-form-block-left-select, .inf-form-block-right-select {
-  padding-bottom: 30px;
-  margin: 0 !important; }
-  .inf-form-block-left-select label, .inf-form-block-right-select label {
-    font-size: 12px;
-    font-family: 'roboto';
-    margin: 0; }
-  .inf-form-block-left-select-custom, .inf-form-block-right-select-custom {
-    background: url("../img/iconmenu.png") no-repeat right 10px center;
+    font-weight: bold;
+    margin-bottom: 50px; }
+  .inf-form-block-left-form, .inf-form-block-right-form {
+    margin-bottom: 35px; }
+    .inf-form-block-left-form label, .inf-form-block-right-form label {
+      font-size: 12px;
+      font-family: 'roboto';
+      margin: 0; }
+    .inf-form-block-left-form-icons, .inf-form-block-right-form-icons {
+      margin: -10px 0 30px 0; }
+      .inf-form-block-left-form-icons ul li a, .inf-form-block-right-form-icons ul li a {
+        padding: 0; }
+        .inf-form-block-left-form-icons ul li a:hover, .inf-form-block-right-form-icons ul li a:hover {
+          background: none; }
+  .inf-form-block-left-double input, .inf-form-block-right-double input {
+    margin: 0px 0 10px; }
+  .inf-form-block-left-control, .inf-form-block-right-control {
+    border: 1px solid #dfdfdf;
     border-radius: 0;
     font-size: 12px;
-    color: #aaa;
+    color: #aaaaaa;
     padding: 5px 10px;
-    height: 30px;
-    margin: 0 !important; }
-
-.inf-form-block-check {
-  padding-left: 40px; }
-  .inf-form-block-check-input:checked ~ .inf-form-block-check-label::after {
-    background-image: url("../img/check.png") !important;
-    background-size: 60% 60%;
-    -webkit-box-shadow: none !important;
-            box-shadow: none !important; }
-  .inf-form-block-check-input:checked ~ .inf-form-block-check-label::before {
-    background-color: #26d2fc !important;
-    -webkit-box-shadow: none !important;
-            box-shadow: none !important; }
-  .inf-form-block-check label {
-    font-size: 12px;
     font-family: 'roboto'; }
-    .inf-form-block-check label::after {
-      width: 30px;
+  .inf-form-block-left-select, .inf-form-block-right-select {
+    padding-bottom: 30px;
+    margin: 0 !important; }
+    .inf-form-block-left-select label, .inf-form-block-right-select label {
+      font-size: 12px;
+      font-family: 'roboto';
+      margin: 0; }
+    .inf-form-block-left-select-custom, .inf-form-block-right-select-custom {
+      background: url("../img/iconmenu.png") no-repeat right 10px center;
+      border-radius: 0;
+      font-size: 12px;
+      color: #aaa;
+      padding: 5px 10px;
       height: 30px;
-      top: 0 !important;
+      font-family: 'roboto';
+      margin: 0 !important; }
+    .inf-form-block-left-select-custom-2, .inf-form-block-right-select-custom-2 {
+      color: #333; }
+  .inf-form-block-check {
+    padding-left: 40px; }
+    .inf-form-block-check-input:checked ~ .inf-form-block-check-label::after {
+      background-image: url("../img/check.png") !important;
+      background-size: 60% 60%;
       -webkit-box-shadow: none !important;
-              box-shadow: none !important;
-      cursor: pointer;
-      left: -15px; }
-    .inf-form-block-check label::before {
-      width: 30px;
-      height: 30px;
-      background: #26d2fc;
-      border-radius: 0 !important;
-      top: 0 !important;
+              box-shadow: none !important; }
+    .inf-form-block-check-input:checked ~ .inf-form-block-check-label::before {
+      background-color: #26d2fc !important;
       -webkit-box-shadow: none !important;
-              box-shadow: none !important;
-      cursor: pointer;
-      left: -15px; }
-
-.inf-form-block .right-link {
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end; }
-  .inf-form-block .right-link a {
+              box-shadow: none !important; }
+    .inf-form-block-check label {
+      font-size: 12px;
+      font-family: 'roboto'; }
+      .inf-form-block-check label::after {
+        width: 30px;
+        height: 30px;
+        top: 0 !important;
+        -webkit-box-shadow: none !important;
+                box-shadow: none !important;
+        cursor: pointer;
+        left: -15px; }
+      .inf-form-block-check label::before {
+        width: 30px;
+        height: 30px;
+        background: #26d2fc;
+        border-radius: 0 !important;
+        top: 0 !important;
+        -webkit-box-shadow: none !important;
+                box-shadow: none !important;
+        cursor: pointer;
+        left: -15px; }
+  .inf-form-block .right-link {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .inf-form-block .right-link a {
+      font-size: 12px;
+      font-style: italic;
+      color: #333;
+      font-family: 'roboto'; }
+  .inf-form-block .bottom-link {
     font-size: 12px;
     font-style: italic;
-    color: #333;
     font-family: 'roboto'; }
 
-.inf-form-block .bottom-link {
-  font-size: 12px;
-  font-style: italic;
-  font-family: 'roboto'; }
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+  .user-quest-block, .user-login-block {
+    padding: 30px 30px; }
+  .inf-form-block-check {
+    padding-top: 30px; }
+  .inf-form-block-check label::before {
+    left: 0;
+    top: 30px !important; }
+  .inf-form-block-check label::after {
+    left: 0;
+    top: 30px !important; }
+  .inf-form-block-right, .inf-form-block-left {
+    padding: 30px 15px; }
+  .inf-form-block-button {
+    bottom: -60px; } }
 
 /*# sourceMappingURL=main.css.map */
