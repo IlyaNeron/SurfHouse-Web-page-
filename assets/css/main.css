@@ -9783,10 +9783,15 @@ ul {
 
 .brands-block {
   background: #fff;
-  padding: 45px 0px 45px 0px; }
+  padding: 45px 0px 45px 0px;
+  margin: 0; }
 
-.brand-logo a {
-  display: block; }
+.brand-logo {
+  width: 12%; }
+  .brand-logo a {
+    display: block; }
+  .brand-logo img {
+    width: 100%; }
 
 .company-social-block {
   background: #eaeaea;
@@ -10052,6 +10057,25 @@ ul {
   .slider_1 .controls-arrows-block {
     display: none !important; } }
 
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+  .brand-logo {
+    width: 25%; } }
+
+@media only screen and (min-width: 320px) and (max-width: 1140px) {
+  .social-image-block {
+    width: 30%;
+    padding: 15px 0; } }
+
+@media only screen and (min-width: 320px) and (max-width: 680px) {
+  .social-image-block {
+    width: 50%;
+    padding: 15px 0; } }
+
+@media only screen and (min-width: 320px) and (max-width: 420px) {
+  .social-image-block {
+    width: 100%;
+    padding: 15px 0; } }
+
 select, option {
   cursor: pointer; }
 
@@ -10262,7 +10286,7 @@ select, option {
         padding: 3px 15px 3px 15px; }
 
 .social-links-block {
-  padding: 0px 15px 0 15px; }
+  margin: 0; }
 
 @media only screen and (min-width: 320px) and (max-width: 500px) {
   .brand-logo {
