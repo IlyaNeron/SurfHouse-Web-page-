@@ -120,9 +120,14 @@
       margin: 0;
       & li {
         & a {
-          padding:10px;
+          padding:8px 6px;
           color:#333;
           font-weight:400;
+          font-family: 'roboto';
+          margin-right:10px;
+          font-size:12px;
+          text-decoration: none;
+          background: #fff;
           &:hover {
             color:#ff0000;
             background: none;
@@ -153,9 +158,13 @@
       margin:0;
       & li {
           & a {
-          padding:10px;
+          padding:8px 6px;
           color:#333;
           font-weight:400;
+          margin-right:10px;
+          font-family: 'roboto';
+          font-size:12px;
+          background: #fff;
           &:hover {
             color:#ff0000;
             background: none;
@@ -278,6 +287,7 @@
           font-family: 'roboto';
           font-weight:800;
           padding: 6px 13px;
+          color:#333;
         &:hover {
           background: #26d2fc;
           color:#333;
@@ -313,6 +323,7 @@
 
 .sliders-section_3 {
   position: relative;
+  padding:0;
   .top-slider {
     h2 {
       font-weight:900;
@@ -353,7 +364,7 @@
 }
 
 .slider_5 {
-  padding-top:130px;
+  padding-top:85px;
 }
 
 

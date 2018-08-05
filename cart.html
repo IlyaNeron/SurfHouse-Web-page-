@@ -71,10 +71,9 @@
             <div class="main-blocks main-blocks_2 row justify-content-sm-center">
                <div class="user-nav-blocks user-nav-blocks_2 user-nav-blocks_3 col-12 col-sm-12 col-md-12 col-lg-3">
                   <div class="nav-side-menu nav-side-menu_2 nav-side-menu_5">
-                     <div class="top-block">
-                        <h3>MENU</h3>
-                     </div>
-                     <ul class="side-menu-items">
+                     <input type="checkbox" id="nav-side-menu-top-block-sub-switch_5" checked>
+                                <label for="nav-side-menu-top-block-sub-switch_5" class="nav-side-menu-item-switch">MENU</label>
+                        <ul class="nav-side-menu-items">
                         <li>
                            <a href="#">ABOUT</a>
                         </li>
@@ -111,10 +110,9 @@
                      </ul>
                   </div>
                   <div class="nav-side-menu nav-side-menu_2 nav-side-menu_3">
-                     <div class="top-block">
-                        <h3>CATEGORY OPTIONS</h3>
-                     </div>
-                     <ul class="side-menu-items">
+                     <input type="checkbox" id="nav-side-menu-top-block-sub-switch_6" checked>
+                                <label for="nav-side-menu-top-block-sub-switch_6" class="nav-side-menu-item-switch">CATEGORY OPTIONS</label>
+                        <ul class="nav-side-menu-items">
                         <li>
                            <a href="#">MEN</a>
                         </li>
@@ -133,10 +131,9 @@
                      </ul>
                   </div>
                   <div class="nav-side-menu nav-side-menu_2 nav-side-menu_3 nav-side-menu_4">
-                     <div class="top-block">
-                        <h3>BRAND OPTIONS</h3>
-                     </div>
-                     <ul class="side-menu-items">
+                     <input type="checkbox" id="nav-side-menu-top-block-sub-switch_7" checked>
+                                <label for="nav-side-menu-top-block-sub-switch_7" class="nav-side-menu-item-switch">BRAND OPTIONS</label>
+                        <ul class="nav-side-menu-items">
                         <li>
                            <a href="#">BILLABONG</a>
                         </li>
@@ -211,6 +208,7 @@
                               </div>
                               <div class="cart-products-left-content">
                                  <div class="cart-products-left-content-item d-flex">
+                                    <h3 class="cart-products-left-content-item-mob-captions">PRODUCT NAME</h3>
                                     <div class="cart-products-left-content-item-1 d-flex">
                                        <div class="cart-products-left-content-item-image">
                                           <img alt="" src="assets/img/slider-catalog-image_6.jpg">
@@ -240,9 +238,11 @@
                                        </div>
                                     </div>
                                     <div class="cart-products-left-content-item-2 d-flex">
+                                       <h3 class="cart-products-left-content-item-mob-captions">UNIT PRICE</h3>
                                        <div class="cart-products-left-content-item-2-price">
                                           <span>&#8364; 749,50</span>
                                        </div>
+                                       <h3 class="cart-products-left-content-item-mob-captions">QTY</h3>
                                        <div class="cart-products-left-content-item-2-qty d-flex justify-content-between">
                                           <a href="#">
                                           <img alt="" src="assets/img/arrow-right.png">
@@ -252,12 +252,14 @@
                                           <img alt="" src="assets/img/arrow-left.png">
                                           </a>
                                        </div>
+                                       <h3 class="cart-products-left-content-item-mob-captions">TOTAL</h3>
                                        <div class="cart-products-left-content-item-2-total d-flex justify-content-end">
                                           <span>&#8364; 749,50</span>
                                        </div>
                                     </div>
                                  </div>
                                  <div class="cart-products-left-content-item d-flex">
+                                    <h3 class="cart-products-left-content-item-mob-captions">PRODUCT NAME</h3>
                                     <div class="cart-products-left-content-item-1 d-flex">
                                        <div class="cart-products-left-content-item-image">
                                           <img alt="" src="assets/img/slider-catalog-image_6.jpg">
@@ -287,9 +289,11 @@
                                        </div>
                                     </div>
                                     <div class="cart-products-left-content-item-2 d-flex">
+                                       <h3 class="cart-products-left-content-item-mob-captions">UNIT PRICE</h3>
                                        <div class="cart-products-left-content-item-2-price">
                                           <span>&#8364; 749,50</span>
                                        </div>
+                                       <h3 class="cart-products-left-content-item-mob-captions">QTY</h3>
                                        <div class="cart-products-left-content-item-2-qty d-flex justify-content-between">
                                           <a href="#">
                                           <img alt="" src="assets/img/arrow-right.png">
@@ -299,6 +303,7 @@
                                           <img alt="" src="assets/img/arrow-left.png">
                                           </a>
                                        </div>
+                                       <h3 class="cart-products-left-content-item-mob-captions">TOTAL</h3>
                                        <div class="cart-products-left-content-item-2-total d-flex justify-content-end">
                                           <span>&#8364; 749,50</span>
                                        </div>
@@ -352,7 +357,8 @@
                            <div class="carousel-inner">
                               <div class="carousel-item active slider-content">
                                  <div class="catalog-slider-wrapper d-flex row justify-content-center">
-                                    <div class="catalog-item col-12 col-sm-6 col-md-4 col-lg-4">
+                                    <div class="catalog-item-wrapper col-sm-6 col-md-4 col-lg-4">
+                                    <div class="catalog-item col-12">
                                        <div class="catalog-item-image">
                                           <a href="#">
                                           <img alt="" class="img-thumbnail" src="assets/img/slider-catalog-image_10.jpg" >
@@ -366,7 +372,9 @@
                                           </div>
                                        </div>
                                     </div>
-                                    <div class="catalog-item catalog-item_2 col-12 col-sm-6 col-md-4 col-lg-4">
+                                 </div>
+                                 <div class="catalog-item-wrapper col-sm-6 col-md-4 col-lg-4">
+                                    <div class="catalog-item catalog-item_2">
                                        <div class="catalog-item-image">
                                           <a href="#">
                                           <img alt="" class="img-thumbnail" src="assets/img/slider-catalog-image_11.jpg" >
@@ -380,7 +388,9 @@
                                           </div>
                                        </div>
                                     </div>
-                                    <div class="catalog-item catalog-item_3 col-12 col-sm-6 col-md-4 col-lg-4">
+                                 </div>
+                                 <div class="catalog-item-wrapper col-sm-6 col-md-4 col-lg-4">
+                                    <div class="catalog-item catalog-item_3">
                                        <div class="catalog-item-image">
                                           <a href="#">
                                           <img alt="" class="img-thumbnail" src="assets/img/slider-catalog-image_12.jpg" >
@@ -394,10 +404,12 @@
                                        </div>
                                     </div>
                                  </div>
+                                 </div>
                               </div>
                               <div class="carousel-item slider-content">
                                  <div class="catalog-slider-wrapper d-flex row justify-content-center">
-                                    <div class="catalog-item col-12 col-sm-6 col-md-4 col-lg-4">
+                                    <div class="catalog-item-wrapper col-sm-6 col-md-4 col-lg-4">
+                                    <div class="catalog-item">
                                        <div class="catalog-item-image">
                                           <a href="#">
                                           <img alt="" class="img-thumbnail" src="assets/img/slider-catalog-image_2.png" >
@@ -411,7 +423,9 @@
                                           </div>
                                        </div>
                                     </div>
-                                    <div class="catalog-item catalog-item_2 col-12 col-sm-6 col-md-4 col-lg-4">
+                                 </div>
+                                 <div class="catalog-item-wrapper col-sm-6 col-md-4 col-lg-4">
+                                    <div class="catalog-item catalog-item_2">
                                        <div class="catalog-item-image">
                                           <a href="#">
                                           <img alt="" class="img-thumbnail" src="assets/img/slider-catalog-image_5.jpg" >
@@ -422,7 +436,9 @@
                                           <span class="item-price">&#8364;.849.95</span>
                                        </div>
                                     </div>
-                                    <div class="catalog-item catalog-item_3 col-12 col-sm-6 col-md-4 col-lg-4">
+                                 </div>
+                                 <div class="catalog-item-wrapper col-sm-6 col-md-4 col-lg-4">
+                                    <div class="catalog-item catalog-item_3">
                                        <div class="catalog-item-image">
                                           <a href="#">
                                           <img alt="" class="img-thumbnail" src="assets/img/slider-catalog-image_6.jpg" >
@@ -434,10 +450,12 @@
                                        </div>
                                     </div>
                                  </div>
+                                 </div>
                               </div>
                               <div class="carousel-item slider-content">
                                  <div class="catalog-slider-wrapper d-flex row justify-content-center">
-                                    <div class="catalog-item col-12 col-sm-6 col-md-4 col-lg-4">
+                                    <div class="catalog-item-wrapper col-sm-6 col-md-4 col-lg-4">
+                                    <div class="catalog-item">
                                        <div class="catalog-item-image">
                                           <a href="#">
                                           <img alt="" class="img-thumbnail" src="assets/img/slider-catalog-image_2.png" >
@@ -451,7 +469,9 @@
                                           </div>
                                        </div>
                                     </div>
-                                    <div class="catalog-item catalog-item_2 col-12 col-sm-6 col-md-4 col-lg-4">
+                                 </div>
+                                 <div class="catalog-item-wrapper col-sm-6 col-md-4 col-lg-4">
+                                    <div class="catalog-item catalog-item_2">
                                        <div class="catalog-item-image">
                                           <a href="#">
                                           <img alt="" class="img-thumbnail" src="assets/img/slider-catalog-image_5.jpg" >
@@ -462,7 +482,9 @@
                                           <span class="item-price">&#8364;.849.95</span>
                                        </div>
                                     </div>
-                                    <div class="catalog-item catalog-item_3 col-12 col-sm-6 col-md-4 col-lg-4">
+                                 </div>
+                                 <div class="catalog-item-wrapper col-sm-6 col-md-4 col-lg-4">
+                                    <div class="catalog-item catalog-item_3">
                                        <div class="catalog-item-image">
                                           <a href="#">
                                           <img alt="" class="img-thumbnail" src="assets/img/slider-catalog-image_6.jpg" >
@@ -473,6 +495,7 @@
                                           <span class="item-price">&#8364;.1,110.99</span>
                                        </div>
                                     </div>
+                                 </div>
                                  </div>
                               </div>
                            </div>
@@ -482,7 +505,7 @@
                            </a>
                         </div>
                      </div>
-                     <div class="sliders-section sliders-section_3 col-12 col-sm-12 col-md-12 col-lg-12">
+                     <div class="sliders-section sliders-section_3  sliders-section_4 col-12 col-sm-12 col-md-12 col-lg-12">
                         <div id="carouselExampleIndicators_6" class="carousel slide slider_4">
                            <div class="top-slider justify-content-between">
                               <h2>RECENTLY VIEWED</h2>
@@ -494,7 +517,8 @@
                            <div class="carousel-inner">
                               <div class="carousel-item active slider-content">
                                  <div class="catalog-slider-wrapper d-flex row justify-content-center">
-                                    <div class="catalog-item col-12 col-sm-6 col-md-4 col-lg-4">
+                                    <div class="catalog-item-wrapper col-sm-6 col-md-4 col-lg-4">
+                                    <div class="catalog-item">
                                        <div class="catalog-item-image">
                                           <a href="#">
                                           <img alt="" class="img-thumbnail" src="assets/img/slider-catalog-image_10.jpg" >
@@ -507,7 +531,9 @@
                                           </div>
                                        </div>
                                     </div>
-                                    <div class="catalog-item catalog-item_2 col-12 col-sm-6 col-md-4 col-lg-4 ">
+                                 </div>
+                                 <div class="catalog-item-wrapper col-sm-6 col-md-4 col-lg-4">
+                                    <div class="catalog-item catalog-item_2">
                                        <div class="catalog-item-image">
                                           <a href="#">
                                           <img alt="" class="img-thumbnail" src="assets/img/slider-catalog-image_11.jpg" >
@@ -520,7 +546,9 @@
                                           </div>
                                        </div>
                                     </div>
-                                    <div class="catalog-item catalog-item_3 col-12 col-sm-6 col-md-4 col-lg-4">
+                                 </div>
+                                 <div class="catalog-item-wrapper col-sm-6 col-md-4 col-lg-4">
+                                    <div class="catalog-item catalog-item_3">
                                        <div class="catalog-item-image">
                                           <a href="#">
                                           <img alt="" class="img-thumbnail" src="assets/img/slider-catalog-image_12.jpg" >
@@ -534,10 +562,12 @@
                                        </div>
                                     </div>
                                  </div>
+                                 </div>
                               </div>
                               <div class="carousel-item slider-content">
                                  <div class="catalog-slider-wrapper d-flex row justify-content-center">
-                                    <div class="catalog-item col-12 col-sm-6 col-md-4 col-lg-4">
+                                    <div class="catalog-item-wrapper col-sm-6 col-md-4 col-lg-4">
+                                    <div class="catalog-item">
                                        <div class="catalog-item-image">
                                           <a href="#">
                                           <img alt="" class="img-thumbnail" src="assets/img/slider-catalog-image_2.png" >
@@ -550,7 +580,9 @@
                                           </div>
                                        </div>
                                     </div>
-                                    <div class="catalog-item catalog-item_2 col-12 col-sm-6 col-md-4 col-lg-4">
+                                 </div>
+                                 <div class="catalog-item-wrapper col-sm-6 col-md-4 col-lg-4">
+                                    <div class="catalog-item catalog-item_2">
                                        <div class="catalog-item-image">
                                           <a href="#">
                                           <img alt="" class="img-thumbnail" src="assets/img/slider-catalog-image_5.jpg" >
@@ -561,7 +593,54 @@
                                           <span class="item-price">&#8364;.849.95</span>
                                        </div>
                                     </div>
-                                    <div class="catalog-item catalog-item_3 col-12 col-sm-6 col-md-4 col-lg-4">
+                                 </div>
+                                 <div class="catalog-item-wrapper col-sm-6 col-md-4 col-lg-4">
+                                    <div class="catalog-item catalog-item_3">
+                                       <div class="catalog-item-image">
+                                          <a href="#">
+                                          <img alt="" class="img-thumbnail" src="assets/img/slider-catalog-image_6.jpg" >
+                                          </a>
+                                       </div>
+                                       <div class="catalog-item-description">
+                                          <a href="#">SYNCRO WOMENS QS M</a>
+                                          <span class="item-price">&#8364;.1,110.99</span>
+                                       </div>
+                                    </div>
+                                  </div>
+                                 </div>
+                              </div>
+                              <div class="carousel-item slider-content">
+                                 <div class="catalog-slider-wrapper d-flex row justify-content-center">
+                                    <div class="catalog-item-wrapper col-sm-6 col-md-4 col-lg-4">
+                                    <div class="catalog-item">
+                                       <div class="catalog-item-image">
+                                          <a href="#">
+                                          <img alt="" class="img-thumbnail" src="assets/img/slider-catalog-image_2.png" >
+                                          </a>
+                                       </div>
+                                       <div class="catalog-item-description">
+                                          <a href="#">USHINGHAM LIGHTNING 2014</a>
+                                          <div class="price-block">
+                                             <span class="item-price">&#8364;.2,960.95</span>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="catalog-item-wrapper col-sm-6 col-md-4 col-lg-4">
+                                    <div class="catalog-item catalog-item_2">
+                                       <div class="catalog-item-image">
+                                          <a href="#">
+                                          <img alt="" class="img-thumbnail" src="assets/img/slider-catalog-image_5.jpg" >
+                                          </a>
+                                       </div>
+                                       <div class="catalog-item-description">
+                                          <a href="#">CYPHER HEAT VES M</a>
+                                          <span class="item-price">&#8364;.849.95</span>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="catalog-item-wrapper col-sm-6 col-md-4 col-lg-4">
+                                    <div class="catalog-item catalog-item_3">
                                        <div class="catalog-item-image">
                                           <a href="#">
                                           <img alt="" class="img-thumbnail" src="assets/img/slider-catalog-image_6.jpg" >
@@ -573,44 +652,6 @@
                                        </div>
                                     </div>
                                  </div>
-                              </div>
-                              <div class="carousel-item slider-content">
-                                 <div class="catalog-slider-wrapper d-flex row justify-content-center">
-                                    <div class="catalog-item col-12 col-sm-6 col-md-4 col-lg-4">
-                                       <div class="catalog-item-image">
-                                          <a href="#">
-                                          <img alt="" class="img-thumbnail" src="assets/img/slider-catalog-image_2.png" >
-                                          </a>
-                                       </div>
-                                       <div class="catalog-item-description">
-                                          <a href="#">USHINGHAM LIGHTNING 2014</a>
-                                          <div class="price-block">
-                                             <span class="item-price">&#8364;.2,960.95</span>
-                                          </div>
-                                       </div>
-                                    </div>
-                                    <div class="catalog-item catalog-item_2 col-12 col-sm-6 col-md-4 col-lg-4">
-                                       <div class="catalog-item-image">
-                                          <a href="#">
-                                          <img alt="" class="img-thumbnail" src="assets/img/slider-catalog-image_5.jpg" >
-                                          </a>
-                                       </div>
-                                       <div class="catalog-item-description">
-                                          <a href="#">CYPHER HEAT VES M</a>
-                                          <span class="item-price">&#8364;.849.95</span>
-                                       </div>
-                                    </div>
-                                    <div class="catalog-item catalog-item_3 col-12 col-sm-6 col-md-4 col-lg-4">
-                                       <div class="catalog-item-image">
-                                          <a href="#">
-                                          <img alt="" class="img-thumbnail" src="assets/img/slider-catalog-image_6.jpg" >
-                                          </a>
-                                       </div>
-                                       <div class="catalog-item-description">
-                                          <a href="#">SYNCRO WOMENS QS M</a>
-                                          <span class="item-price">&#8364;.1,110.99</span>
-                                       </div>
-                                    </div>
                                  </div>
                               </div>
                            </div>
