@@ -452,6 +452,7 @@ ul {
       transition:0.5s all;
       cursor: pointer;
       position: relative;
+      z-index:100;
       font-family: 'roboto';
       &:hover {
         background: #fff51f ;
