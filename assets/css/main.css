@@ -11065,6 +11065,12 @@ select, option {
 .main-blocks_3 .side-banner-block_4 {
   margin-top: 65px; }
 
+.top-cart-blocks .top-cart-block-second span {
+  color: #ff0101; }
+
+.top-cart-blocks .top-cart-block-second .before-element {
+  border-color: #ff0101; }
+
 .user-login-block h3 {
   font-size: 24px;
   font-weight: 500;

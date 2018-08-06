@@ -27,6 +27,17 @@
 
 }
 
+.top-cart-blocks {
+  .top-cart-block-second {
+      & span {
+        color:#ff0101;
+      }
+      & .before-element {
+        border-color: #ff0101;
+      }
+    }
+  }
+
 .user-login-block {
   & h3 {
     font-size:24px;
