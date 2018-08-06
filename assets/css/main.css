@@ -9994,7 +9994,10 @@ ul {
       padding: 0; }
   .footer .footer-links ul {
     padding: 0;
-    list-style: none; }
+    list-style: none;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end; }
     .footer .footer-links ul li {
       padding: 0; }
       .footer .footer-links ul li a {
@@ -10031,9 +10034,9 @@ ul {
         -ms-flex-pack: center;
             justify-content: center; }
     .footer-links ul {
-      -webkit-box-pack: center;
-          -ms-flex-pack: center;
-              justify-content: center; }
+      -webkit-box-pack: center !important;
+          -ms-flex-pack: center !important;
+              justify-content: center !important; }
   .footer-bottom-wrapper {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;

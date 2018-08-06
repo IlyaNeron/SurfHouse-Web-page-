@@ -976,6 +976,7 @@ ul {
       & ul {
         padding:0;
         list-style: none;
+        justify-content:flex-end;
         & li {
           padding:0;
           & a {
@@ -1024,7 +1025,7 @@ ul {
       max-width:100%;
       justify-content:center;
       & ul {
-        justify-content:center;
+        justify-content:center !important;
       }
     }
     .footer-bottom-wrapper {
