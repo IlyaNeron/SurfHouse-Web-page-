@@ -9,9 +9,9 @@ html {
 }
 
 body {
-  overflow-x: hidden;
   font-family: 'Raleway', sans-serif;
   position: relative;
+  min-width: 320px;
 }
 
 ul {
@@ -676,6 +676,7 @@ ul {
         padding:20px;
         display: flex;
         justify-content:space-between;
+        align-items:flex-start;
 
         & a {
           font-size:14px;
@@ -843,7 +844,7 @@ ul {
   .footer {
     background: #373737;
     &-list {
-      padding:70px 15px 60px 15px;
+      padding:70px 15px 32px 15px;
     }
     .nav-list {
       & h3 {
@@ -902,7 +903,7 @@ ul {
       }
 
       .web-wallet-block {
-        padding:40px 0;
+        padding:40px 0 0;
         & ul {
           padding: 0;
           list-style: none;
@@ -951,11 +952,7 @@ ul {
 
     &-bottom {
       background: #333;
-      position: absolute;
-      right:0;
-      left:0;
-      padding:10px 20px 0 20px;
-      bottom:0;
+      padding:10px 20px 5px 20px;
     }
     .company-text {
       display: flex;
@@ -975,6 +972,7 @@ ul {
     .footer-links {
       & ul {
         padding:0;
+        margin:0;
         list-style: none;
         justify-content:flex-end;
         & li {

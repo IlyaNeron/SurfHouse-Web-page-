@@ -284,16 +284,23 @@
                   <div class="catalog-block col-12 col-sm-12 col-md-8 col-lg-9">
                      <div class="top-catalog-block">
                         <div class="top-links-block justify-content-between d-flex">
-                           <div class="">
-                              <a href="#">Home</a>
-                              <span>&raquo;</span>
-                              <a href="#">Apparel</a>
-                              <span>&raquo;</span>
-                              <a href="#"><span class="top-links-block-active">Women</span></a>
+                           <div class="top-links-block-left">
+                              <nav aria-label="breadcrumb">
+                                <ol class="breadcrumb top-links-block-left-items">
+                                  <li class="breadcrumb-item"><a href="#">Home</a></li>
+                                  <li class="breadcrumb-item"><a href="#">Apparel</a></li>
+                                  <li class="breadcrumb-item active" aria-current="page">Women</li>
+                                </ol>
+                              </nav>
                            </div>
-                           <div class="">
-                              <span>&laquo;</span>
-                              <a href="#">Back to previous page</a>
+                           <div class="top-links-block-right align-items-center d-flex">
+                              <nav aria-label="breadcrumb">
+                                <ol class="breadcrumb top-links-block-right-items">
+                                  <li class="breadcrumb-item top-links-block-right-items-static" aria-current="page">
+                                    <a href="#">Back to previous page</a>
+                                    </li>
+                                </ol>
+                              </nav>
                            </div>
                         </div>
                         <div class="bottom-filters-block d-flex justify-content-between align-items-center">
@@ -853,6 +860,7 @@
                   </div>
                </div>
             </div>
+         </div>
             <div class="footer-bottom">
                <div class="container p-0">
                   <div class="footer-bottom-wrapper d-flex justify-content-between">
@@ -901,7 +909,6 @@
                   </div>
                </div>
             </div>
-         </div>
       </footer>
       <script src="assets/js/main.js"></script>
       <script src="dist/assets/js/main.min.js"></script>

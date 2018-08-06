@@ -166,17 +166,25 @@
                </div>
                <div class="catalog-block catalog-block_4 col-12 col-sm-12 col-md-12 col-lg-9 p-0">
                   <div class="top-catalog-block">
-                     <div class="top-links-block top-links-block_2 justify-content-between d-flex flex-wrap">
-                        <div class="">
-                           <a href="#">Home</a>
-                           <span>&raquo;</span>
-                           <a href="#"><span class="top-links-block-active">Shopping Cart</span></a>
+                     <div class="top-links-block top-links-block_2 justify-content-between d-flex">
+                           <div class="top-links-block-left">
+                              <nav aria-label="breadcrumb">
+                                <ol class="breadcrumb top-links-block-left-items">
+                                  <li class="breadcrumb-item"><a href="#">Home</a></li>
+                                  <li class="breadcrumb-item active" aria-current="page">Shopping Cart</li>
+                                </ol>
+                              </nav>
+                           </div>
+                           <div class="top-links-block-right align-items-center d-flex">
+                              <nav aria-label="breadcrumb">
+                                <ol class="breadcrumb top-links-block-right-items">
+                                  <li class="breadcrumb-item top-links-block-right-items-static" aria-current="page">
+                                    <a href="#">Back to previous page</a>
+                                    </li>
+                                </ol>
+                              </nav>
+                           </div>
                         </div>
-                        <div class="">
-                           <span>&laquo;</span>
-                           <a href="#">Back to previous page</a>
-                        </div>
-                     </div>
                   </div>
                   <div class="main-catalog-block main-catalog-block_2 main-cart-block">
                      <div class="contact-form-block product-block main-cart-block-shopping  m-0">
@@ -831,6 +839,7 @@
                   </div>
                </div>
             </div>
+         </div>
             <div class="footer-bottom">
                <div class="container p-0">
                   <div class="footer-bottom-wrapper d-flex justify-content-between">
@@ -879,7 +888,6 @@
                   </div>
                </div>
             </div>
-         </div>
       </footer>
       <script src="assets/js/main.js"></script>
       <script src="dist/assets/js/main.min.js"></script>
