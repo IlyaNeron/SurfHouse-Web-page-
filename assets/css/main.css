@@ -11146,6 +11146,7 @@ select, option {
   line-height: 14px; }
 
 .user-quest-block-check-1 input, .user-quest-block-check-2 input {
+  cursor: pointer;
   top: 50%;
   -webkit-transform: translateY(-85%);
           transform: translateY(-85%); }
@@ -11153,7 +11154,8 @@ select, option {
 .user-quest-block-check-1 label, .user-quest-block-check-2 label {
   font-size: 12px;
   font-family: 'roboto';
-  color: #555555; }
+  color: #555555;
+  cursor: pointer; }
 
 .user-quest-block-text-2, .user-quest-block-text-3 {
   font-family: 'roboto';
