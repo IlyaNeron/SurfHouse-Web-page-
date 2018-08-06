@@ -354,52 +354,90 @@ ul {
     padding:0;
    &  #nav-side-menu-top-block-sub-switch_1:checked ~ .nav-side-menu-items {
       display: block;
-    animation: sub-menu 0.7s ease-in-out;
+    animation: pullDown 0.7s ease-in-out;
     }
     &  #nav-side-menu-top-block-sub-switch_2:checked ~ .nav-side-menu-items {
       display: block;
-    animation: sub-menu 0.7s ease-in-out;
+    animation: pullDown 0.7s ease-in-out;
     }
     &  #nav-side-menu-top-block-sub-switch_3:checked ~ .nav-side-menu-items {
       display: block;
-    animation: sub-menu 0.7s ease-in-out;
+    animation: pullDown 0.7s ease-in-out;
     }
     &  #nav-side-menu-top-block-sub-switch_4:checked ~ .nav-side-menu-items {
       display: block;
-    animation: sub-menu 0.7s ease-in-out;
+    animation: pullDown 0.7s ease-in-out;
     }
     &  #nav-side-menu-top-block-sub-switch_5:checked ~ .nav-side-menu-items {
       display: block;
-    animation: sub-menu 0.7s ease-in-out;
+    animation: pullDown 0.7s ease-in-out;
     }
     &  #nav-side-menu-top-block-sub-switch_6:checked ~ .nav-side-menu-items {
       display: block;
-    animation: sub-menu 0.7s ease-in-out;
+    animation: pullDown 0.7s ease-in-out;
     }
     &  #nav-side-menu-top-block-sub-switch_7:checked ~ .nav-side-menu-items {
       display: block;
-    animation: sub-menu 0.7s ease-in-out;
+    animation: pullDown 0.7s ease-in-out;
     }
     &  #nav-side-menu-top-block-sub-switch_8:checked ~ .nav-side-menu-items {
       display: block;
-    animation: sub-menu 0.7s ease-in-out;
+    animation: pullDown 0.7s ease-in-out;
     }
     &  #nav-side-menu-top-block-sub-switch_9:checked ~ .nav-side-menu-items {
       display: block;
-    animation: sub-menu 0.7s ease-in-out;
+    animation: pullDown 0.7s ease-in-out;
     }
     &  #nav-side-menu-top-block-sub-switch_10:checked ~ .nav-side-menu-items {
       display: block;
-    animation: sub-menu 0.7s ease-in-out;
+    animation: pullDown 0.7s ease-in-out;
     }
     &  #nav-side-menu-top-block-sub-switch_11:checked ~ .nav-side-menu-items {
       display: block;
-    animation: sub-menu 0.7s ease-in-out;
+    animation: pullDown 0.7s ease-in-out;
     }
     &  #nav-side-menu-top-block-sub-switch_12:checked ~ .nav-side-menu-items {
       display: block;
-    animation: sub-menu 0.7s ease-in-out;
+    animation: pullDown 0.7s ease-in-out;
     }
+    .pullDown{
+    animation-name: pullDown;
+    -webkit-animation-name: pullDown;   
+ 
+    animation-duration: 3s; 
+    -webkit-animation-duration: 3s;
+ 
+    animation-timing-function: ease-out;    
+    -webkit-animation-timing-function: ease-out;    
+ 
+    transform-origin: 50% 0%;
+    -ms-transform-origin: 50% 0%;
+    -webkit-transform-origin: 50% 0%;       
+}
+ 
+@keyframes pullDown {
+    0% {
+        transform: scaleY(0.1);
+    }
+    40% {
+        transform: scaleY(1.0);
+    }
+    60% {
+        transform: scaleY(1.0);
+    }
+    80% {
+        transform: scaleY(1.0);
+    }
+    100% {
+        transform: scaleY(1.0);
+    }               
+    80% {
+        transform: scaleY(1.0);
+    }
+    100% {
+        transform: scaleY(1);
+    }                           
+}
     & input {
       display: none;
     }
@@ -411,13 +449,16 @@ ul {
       padding:22px 40px;
        background: #333;
       width:100%;
-      transition:1s all;
+      transition:0.5s all;
       cursor: pointer;
       position: relative;
       font-family: 'roboto';
       &:hover {
         background: #fff51f ;
         color:#333;
+           text-shadow: -0.25px -0.25px 0 #333, 0.25px 0.25px #333;
+       box-shadow: 0px -1px 30px 1px rgba(0,0,0,0.62);
+       border-radius: 5px;
       }
       &::after {
         content: '';
