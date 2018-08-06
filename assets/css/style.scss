@@ -47,7 +47,8 @@ ul {
   }
 
   .social-icons-block {
-    padding:30px 0 0 0;
+    display: flex;
+    align-items:center;
   }
 
   .social-icons-block-items {
@@ -291,12 +292,14 @@ ul {
   }
   .close-icon {
     font-size:20px;
+    cursor: pointer;
   }
 
   .close-icon_2 {
     color:#333;
     font-size:12px;
     font-weight:900;
+    cursor: pointer;
   }
 
   .close-button-block_2 {
@@ -313,7 +316,11 @@ ul {
       color:#0c0c0c ;
       font-weight:bold;
       border-radius: 0px;
-      padding:5px 10px;
+      padding:5px 55px 5px 10px;
+      height:30px;
+      &:focus {
+        box-shadow: none;
+      }
     }
 
   .search-button {
@@ -334,7 +341,7 @@ ul {
 
   .block-description-info {
     background: #fff51f;
-    padding:68px 25px;
+    padding:68px 20px;
     margin:10px 0 45px 0;
 
     & p {
@@ -566,18 +573,18 @@ ul {
 
   .items-block {
     background: #fff;
-    padding: 30px 0px;
+    padding: 30px 30px;
     margin:30px 0 0 0;
 
     & h2 {
       font-weight:900;
       font-style:italic;
       font-size:24px;
-      padding:0 30px;
       margin-bottom:30px;
     }
     & ul {
       padding:0;
+      margin:0 -30px;
     }
 
     & li {
@@ -605,7 +612,7 @@ ul {
       font-style:italic;
       font-weight:900;
       font-family: 'roboto';
-      margin:20px 30px;
+      margin:20px 0px;
     }
 
   }
@@ -952,6 +959,7 @@ ul {
 
     &-bottom {
       background: #333;
+      position: static;
       padding:10px 20px 5px 20px;
     }
     .company-text {
@@ -1012,9 +1020,6 @@ ul {
     }
 
   @media only screen and (min-width: 320px) and (max-width:705px) {
-    .footer-bottom {
-      position: inherit;
-    }
     .company-text {
       max-width:100%;
       justify-content:center;

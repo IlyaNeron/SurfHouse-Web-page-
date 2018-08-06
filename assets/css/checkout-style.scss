@@ -272,7 +272,9 @@
     }
   }
   &-check {
-    padding-left:40px;
+    &-input {
+      left:-9999px;
+    }
     &-input:checked ~ &-label::after {
        background-image: url('../img/check.png') !important;
        background-size: 60% 60%;
@@ -285,13 +287,14 @@
     & label {
       font-size: 12px;
       font-family: 'roboto';
+      cursor: pointer;
+      padding-left:15px;
       &::after {
         width:30px;
         height: 30px;
         top:0 !important;
         box-shadow: none !important;
         cursor: pointer;
-        left:-15px;
       }
       &::before {
         width:30px;
@@ -301,7 +304,6 @@
         top:0 !important;
         box-shadow: none !important;
         cursor: pointer;
-        left:-15px;
       }
     }
   }

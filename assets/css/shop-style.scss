@@ -43,6 +43,8 @@
         margin:0;
         & li {
           padding:0 0px;
+          display: flex;
+          align-items:center;
           &:last-child::after {
             display: none;
           }
@@ -71,11 +73,19 @@
           font-size:12px;
           font-family: 'roboto';
           color:#989898;
-          & a {
+        }
+      }
+    }
+    &-right {
+       & a {
+        font-size:12px;
+        color:#989898;
+            position: relative;
              &::before {
         content: "«";
         text-decoration: none;
         padding:0 10px;
+        color:#989898;
         font-size:16px;
         position: absolute;
         left:-25px;
@@ -83,12 +93,6 @@
         transform:translateY(-50%);
       }
           }
-        }
-      }
-    }
-    &-right {
-      position: relative;
-      
     }
   }
   .top-catalog-block {
@@ -172,6 +176,8 @@
       margin:0;
       padding:0;
       & li {
+        display: flex;
+        align-items:center;
         & a {
           padding:3.5px 7px;
           margin:0 2px;

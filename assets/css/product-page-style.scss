@@ -119,12 +119,13 @@
       padding:0;
       margin: 0;
       & li {
+        margin-right:10px;
         & a {
-          padding:8px 6px;
+          padding:6px 6px;
+          display: block;
           color:#333;
           font-weight:400;
           font-family: 'roboto';
-          margin-right:10px;
           font-size:12px;
           text-decoration: none;
           background: #fff;
@@ -157,11 +158,12 @@
       padding:0;
       margin:0;
       & li {
+        margin-right:10px;
           & a {
-          padding:8px 6px;
+          padding:6px 6px;
           color:#333;
+          display: block;
           font-weight:400;
-          margin-right:10px;
           font-family: 'roboto';
           font-size:12px;
           background: #fff;
@@ -188,13 +190,17 @@
     background: #fff;
     display: inline-block;
     width:30px;
+    height:30px;
     text-align: center;
     cursor: pointer;
     border: 1px solid #efefef;
     color:#a8a8a8;
+    font-family: 'roboto';
+    font-size:12px;
   }
   .add {
     padding-left:5px;
+    cursor: pointer;
   }
 
   .product-add-button {
