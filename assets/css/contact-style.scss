@@ -33,6 +33,9 @@
 .main-catalog-block_2 {
   .brands-block {
     margin:0 0px;
+    & .brand-logo {
+      width:15%;
+    }
   }
   padding:20px 0;
   .company-info-block_2 {

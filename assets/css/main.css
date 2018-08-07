@@ -10354,6 +10354,8 @@ select, option {
   padding: 20px 0; }
   .main-catalog-block_2 .brands-block {
     margin: 0 0px; }
+    .main-catalog-block_2 .brands-block .brand-logo {
+      width: 15%; }
   .main-catalog-block_2 .company-info-block_2 {
     padding: 0 20px; }
   .main-catalog-block_2 .company-loc h3 {
